@@ -1,0 +1,49 @@
+{
+  "name": "rxjs-intro",
+  "version": "1.0.0",
+  "description": "Intro to RxJS",
+  "main": "index.js",
+  "scripts": {
+    "start:basic": "nodemon -r esm examples/basic.js",
+    "start:fp": "nodemon -r esm examples/fp.js",
+    "start:map": "nodemon -r esm examples/map.js",
+    "start:interval": "nodemon -r esm examples/interval.js",
+    "start:of": "nodemon -r esm examples/of.js",
+    "start:from": "nodemon -r esm examples/from.js",
+    "ex:distinctUntilChanged": "nodemon -r esm exercises/distinctUntilChanged.js",
+    "ex:mergeMap": "nodemon -r esm exercises/mergeMap.js",
+    "ex:pairwise": "nodemon -r esm exercises/pairwise.js",
+    "ex:switchMap": "nodemon -r esm exercises/switchMap.js",
+    "ex:triplewise": "nodemon -r esm exercises/triplewise.js",
+    "ex:zip": "nodemon -r esm exercises/zip.js",
+    "fp": "nodemon -r esm fp.js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "rxjs",
+    "functional programming",
+    "reactive programming",
+    "tutorial"
+  ],
+  "author": "ThisseasX",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
